@@ -1,0 +1,9 @@
+name: Tests
+on: [push]
+
+jobs:
+  test-action:
+    steps:
+      - uses: actions/checkout@v3
+      - uses: aisightgmbh/actions-install-aws@master
+      - run: aws --version
